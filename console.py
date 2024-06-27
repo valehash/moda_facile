@@ -20,8 +20,8 @@ classes = {"BaseModel": BaseModel,
 
 
 class HBNBCommand(cmd.Cmd):
-    """ HBNH console """
-    prompt = '(hbnb) '
+    """ facile console """
+    prompt = '(moda) '
 
     def do_EOF(self, arg):
         """Exits console"""
