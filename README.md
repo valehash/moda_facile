@@ -1,4 +1,5 @@
-A readme for the Airbnb clone project
+A readme for the portfolio mvp 
+project
 
 TO USE: clone the repository cd into the folder modafacile and type python console.py to start the  console : The Console: The console consist of many commands type help to list the commands and help <command_name> to see how it works and what it does :
 ModaFacile - The Console
