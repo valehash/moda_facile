@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+	font-family:'Poppins';
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: white;
+}
+
+nav {
+	background-color: white;
+	position: fixed; /*this allows for fixed element even when scrolling*/
+	width: 100%;
+	z-index: 1000; /*reorder the way the elements are displayed*/
+	
+}
+
+#navbar {
+	width: 85%;
+	margin: auto; /*margin auto calulate and assigns equal amout of margin on all spaces left and right so it can be horizontally centered in parent*/
+	display: flex;
+	/*to vertically center it*/
+	place-items: center; /* or align-item*/
+	justify-content: space-between;
+	padding: 15px;
+}
+
+#navbar-links {
+	display: flex;
+	flex-direction: row;
+	place-items: center;
+}
+
+#navbar-links ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+#navbar-links li {
+	margin-left: 60px;
+}
+
+#navbar-links a {
+	text-decoration: none;
+	color: rgb(64, 64, 64);
+	font-weight: 500;
+	-webkit-font-smoothings: antialiased; /*this would smoothing the lines of each letter*/
+	font-size: 16px;
+}
+
+
+.blue-button {
+	border: 1px solid black;
+	border-radius: 1px;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	padding: 0.75rem 1.5rem;
+	font-weight: 500;
+	--webkit-font-smoothing: antialiased;
+	transition: 0.3s ease-in-out;
+}
+
+.blue-button:hover {
+	background-color: gold;
+}
+
+#navbar-links button{
+	margin-left: 60px;
+	padding: 12px 20px; /*inside space horizontal and vertical*/
+	border-radius: 5px; /*round coner effect*/ 
+}
+
+
+/* Top SECTION*/
+#home-top-container {
+	background: white;
+	height: 80vh;
+	padding: 20px;
+	padding-top: 150px;
+	padding-bottom: 80px;
+	display: flex;
+	justify-content: center;
+}
+
+#home-top-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 85%;
+	place-items: center;
+}
+
+#home-top-text {
+	width: 50%;
+
+}
+
+#home-top-text h1 {
+	color: rgb(64, 64, 64);
+	font-size: 80px;
+	font-weight: 600;
+}
+
+#home-top-text p {
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 15px;
+	color: rgb(135, 135, 135);
+}
+
+#home-top-text button {
+	margin-top: 30px;
+	padding: 17px;
+	width: 40%;
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+#home-top-image img {
+	max-width: 450px;
+}
+
+
+/* OUR COLLECTION SECTION */
+#collection-container {
+	background-color: #c7d5f1;
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	padding: 20px;
+
+}
+
+
+#collection-container h1 {
+	color: rgb(64, 64, 64);
+	font-weight: 500;
+	font-size: 50px;
+	margin-top: 40px;
+}
+
+
+#collection-items-wrapper {
+	display: flex;
+	justify-content: space-around;
+	width: 70%;
+	padding: 50px;
+}
+
+.collection-item {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+}
+.collection-icon {
+	background-color: white;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.3);
+	color: rgb(64, 64, 64);
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	transition: 0.4s ease-in-out;
+}
+
+
+.collection-icon:hover {
+	background-color: gold;
+	color: black;
+}
+
+.collection-name {
+	margin-top: 20px;
+	color: rgb(64, 64, 64);
+	font-weight: 500;
+}
+
+
+/* Best SELLERS PRODUCT SECTION */
+.product-section-container {
+	margin-top: 40px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+}
+
+/* You can comment this out
+ * this allows a change in background color
+ * when a mose hover effect is triggered
+ * on any of the best seller cards
+ * try it  out
+.product-item:hover {
+	background-color: aqua;
+}
+*/
+.product-setion-container h1 {
+	color: rgb(64, 64, 64);
+	font-weight: 500;
+	font-size: 45px;
+}
+
+.product-section-description {
+	color: rgb(120, 120, 120);
+	text-align: center;
+	width: 45%;
+	margin-top: 5px;
+}
+
+ul.product-section-items-wrapper {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	margin-top: 60px;
+	width: 100%;
+}
+
+.product-item {
+	width: 300px;
+	border-radius: 20px;
+	margin: 20px;
+	overflow: hidden;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+	/*background-color: rgb(231, 238, 252);*/
+	height: 73%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	padding: 10px;
+}
+
+.product-image img {
+	height: 500px;
+	width: auto;
+}
+
+.product-text {
+	text-align: center;
+	padding: 20px;
+}
+
+.product-title {
+	color: rgb(50, 50, 50);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.product-purchase {
+	margin-top: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	place-items: center;
+}
+
+.product-price {
+	font-size: 18px;
+	color: rgb(65, 105, 225);
+	font-weight: 500;
+	padding-right: 5px;
+}
+
+
+button.add-to-cart {
+	padding: 7px 21px;
+	border-radius: 1px;
+	font-size: 16px;
+}
+
+.footer-container{
+	background-color: black;
+	height: 80px;
+}
