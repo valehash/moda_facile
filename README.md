@@ -11,3 +11,6 @@ This repository contains the initial stage of a student project to build a clone
 
 
 ![image](https://github.com/valehash/moda_facile/assets/155540375/61476b48-161e-4eb0-9f44-a7bef4e623f0)
+
+
+### Proect is still a WIP
